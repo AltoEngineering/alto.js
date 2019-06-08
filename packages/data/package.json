@@ -1,6 +1,6 @@
 {
   "name": "@alto.js/data",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Alto.js data library",
   "keywords": [
     "Alto.js"
@@ -24,4 +24,3 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   }
 }
-
