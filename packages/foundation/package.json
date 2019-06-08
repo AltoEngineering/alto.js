@@ -1,0 +1,26 @@
+{
+  "name": "@alto.js/foundation",
+  "version": "0.0.0",
+  "description": "Alto.js foundation library",
+  "keywords": [
+    "Alto.js"
+  ],
+  "author": "Chad Eubanks <ceubanks@thecodeboutique.com>",
+  "homepage": "http://altojs.com",
+  "license": "MIT",
+  "main": "lib/foundation.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publicCOnfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
