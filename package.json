@@ -16,6 +16,8 @@
   "scripts": {
     "build": "lerna run build",
     "publish": "lerna run build && lerna publish",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "tsc": "lerna run tsc",
+    "application": "cd sample-application && npm run start"
   }
 }

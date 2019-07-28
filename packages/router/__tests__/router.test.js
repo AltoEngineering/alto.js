@@ -1,7 +1,6 @@
-'use strict';
+import {Router} from "../src/router";
 
-const router = require('..');
-
-describe('router', () => {
-    it('needs tests');
+test('Router: Sample Test', () => {
+    expect(true).toBe(true);
 });
+

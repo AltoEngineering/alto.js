@@ -1,7 +1,6 @@
-'use strict';
+import {Data} from "../src/data";
 
-const data = require('..');
-
-describe('data', () => {
-    it('needs tests');
+test('Data: Sample Test', () => {
+    expect(true).toBe(true);
 });
+
