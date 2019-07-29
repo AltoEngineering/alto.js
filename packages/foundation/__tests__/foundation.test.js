@@ -1,7 +1,4 @@
-'use strict';
-
-const foundation = require('..');
-
-describe('foundation', () => {
-    it('needs tests');
+test('Foundation: Sample Test', () => {
+    expect(true).toBe(true);
 });
+

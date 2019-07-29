@@ -1,7 +1,4 @@
-'use strict';
-
-const data = require('..');
-
-describe('data', () => {
-    it('needs tests');
+test('Data: Sample Test', () => {
+    expect(true).toBe(true);
 });
+
