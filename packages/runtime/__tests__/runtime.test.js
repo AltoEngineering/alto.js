@@ -1,7 +1,4 @@
-'use strict';
-
-const runtime = require('..');
-
-describe('runtime', () => {
-    it('needs tests');
+test('Runtime: Sample Test', () => {
+    expect(true).toBe(true);
 });
+
