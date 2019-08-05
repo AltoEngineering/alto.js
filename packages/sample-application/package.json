@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@alto.js/data": "0.0.1-alpha.0",
-    "@alto.js/foundation": "0.0.1-alpha.0",
+    "@alto.js/application": "0.0.1-alpha.0",
     "@alto.js/router": "0.0.1-alpha.0",
     "@alto.js/runtime": "0.0.1-alpha.0",
-    "@alto.js/ui": "0.0.1-alpha.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1"

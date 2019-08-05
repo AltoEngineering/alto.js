@@ -1,7 +1,7 @@
 {
-  "name": "@alto.js/router",
+  "name": "@alto.js/application",
   "version": "0.0.1-alpha.0",
-  "description": "Alto.js router library",
+  "description": "Alto.js application library",
   "author": "Chad Eubanks",
   "license": "MIT",
   "private": false,
@@ -11,9 +11,7 @@
   "scripts": {
     "tsc": "tsc"
   },
-  "dependencies": {
-    "@alto.js/runtime": "0.0.1-alpha.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6"
