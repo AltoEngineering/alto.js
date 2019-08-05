@@ -2,34 +2,27 @@
   "name": "@alto.js/runtime",
   "version": "0.0.1-alpha.0",
   "description": "Alto.js runtime library",
-  "keywords": [
-    "Alto.js"
-  ],
-  "author": "Chad Eubanks <ceubanks@thecodeboutique.com>",
-  "homepage": "http://altojs.com",
+  "author": "Chad Eubanks",
   "license": "MIT",
+  "private": false,
+  "files": ["lib"],
   "main": "./lib/index.js",
   "types": "./lib/types.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "scripts": {
-    "tsc": "tsc",
-    "test": "npx jest"
+    "tsc": "tsc"
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": ">= 16.8.0 < 17",
-    "react-dom": ">= 16.8.0 < 17"
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   },
   "devDependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.13.0",
-    "@types/react-dom": "16.8.3",
-    "tslib": "1.9.3",
-    "@types/react": "16.8.10",
-    "typescript": "3.4.1",
+    "@types/jest": "24.0.16",
+    "@types/node": "12.6.9",
+    "@types/react-dom": "16.8.5",
+    "tslib": "1.10.0",
+    "@types/react": "16.8.24",
+    "typescript": "3.5.3",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   }

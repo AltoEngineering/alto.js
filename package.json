@@ -1,13 +1,12 @@
 {
-	"name": "root",
-	"private": true,
-	"devDependencies": {
-		"lerna": "^3.16.4"
-	},
-	"scripts": {
-		"tsc": "lerna run tsc",
-		"bootstrap": "lerna bootstrap --hoist",
-		"build": "lerna run build",
-		"test": "lerna run test"
-	}
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "scripts": {
+    "tsc": "npx lerna run tsc",
+    "start": "npx lerna run start",
+    "bootstrap": "npx lerna bootstrap --hoist"
+  }
 }
