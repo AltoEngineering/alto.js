@@ -4,8 +4,8 @@ import { RouteObserver } from "./route_observer";
 import { Router } from "./router";
 ;
 export var Routes = function (props) {
-    var _a = useState(Object.assign({}, { index: {} }, props)), state = _a[0], setState = _a[1];
-    var _b = useState(null), dom = _b[0], setDom = _b[1];
+    var state = useState(Object.assign({}, { index: {} }, props))[0];
+    var _a = useState(null), dom = _a[0], setDom = _a[1];
     var routeObserver = useObserver(RouteObserver)[0];
     var children = React.Children.toArray(state.children);
     var match;
@@ -22,10 +22,6 @@ export var Routes = function (props) {
             if (lookup === '') {
                 lookup = '/index';
             }
-            if (!lookup && !match) {
-                debugger;
-                return;
-            }
             if (!lookup) {
                 setDom(match.props.component);
                 return;
@@ -39,13 +35,7 @@ export var Routes = function (props) {
             }
             children.some(function (child) {
                 match = child;
-                if (child.props.path === lookup || child.props.path === "/" + lookup) {
-                    noBaseMatch = false;
-                    routes.shift();
-                    findMatch(child.props.children, routes[0]);
-                    return;
-                }
-                else if (child.props.path.charAt(0) === ':' || child.props.path.charAt(1) === ':') {
+                if (child.props.path === lookup || child.props.path === "/" + lookup || child.props.path.charAt(0) === ':' || child.props.path.charAt(1) === ':') {
                     noBaseMatch = false;
                     routes.shift();
                     findMatch(child.props.children, routes[0]);

@@ -9,7 +9,7 @@ interface RoutesInterface {
 };
 
 export const Routes: FunctionComponent<RoutesInterface> = (props) => {
-    let [state, setState] = useState(Object.assign({}, {index: {}}, props));
+    let [state] = useState(Object.assign({}, {index: {}}, props));
     let [dom, setDom] = useState(null);
     let [routeObserver] = useObserver(RouteObserver);
     let children: any = React.Children.toArray(state.children);
@@ -33,11 +33,6 @@ export const Routes: FunctionComponent<RoutesInterface> = (props) => {
                 lookup = '/index'
             }
 
-            if (!lookup && !match) {
-                debugger;
-                return
-            }
-
             if (!lookup) {
                 setDom(match.props.component);
                 return
@@ -55,13 +50,7 @@ export const Routes: FunctionComponent<RoutesInterface> = (props) => {
             children.some((child: any) => {
                 match = child;
 
-                if (child.props.path === lookup || child.props.path === `/${lookup}`) {
-                    noBaseMatch = false;
-                    routes.shift();
-                    findMatch(child.props.children, routes[0]);
-
-                    return;
-                } else if (child.props.path.charAt(0) === ':' || child.props.path.charAt(1) === ':') {
+                if (child.props.path === lookup || child.props.path === `/${lookup}` || child.props.path.charAt(0) === ':' || child.props.path.charAt(1) === ':') {
                     noBaseMatch = false;
                     routes.shift();
                     findMatch(child.props.children, routes[0]);
