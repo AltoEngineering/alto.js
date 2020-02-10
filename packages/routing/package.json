@@ -1,0 +1,31 @@
+{
+  "name": "@alto.js/routing",
+  "version": "0.0.1-alpha.0",
+  "description": "Alto.js router library",
+  "author": "Chad Eubanks",
+  "license": "MIT",
+  "private": false,
+  "files": ["lib"],
+  "main": "./lib/index.js",
+  "types": "./lib/types.d.ts",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@alto.js/runtime": "0.0.1-alpha.0"
+  },
+  "peerDependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.16",
+    "@types/node": "12.6.9",
+    "@types/react-dom": "16.8.5",
+    "tslib": "1.10.0",
+    "@types/react": "16.8.24",
+    "typescript": "3.5.3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
+}

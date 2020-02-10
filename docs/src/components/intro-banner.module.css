@@ -1,0 +1,132 @@
+.base {
+    position: relative;
+    height: 21em;
+    padding: 1em;
+    background: #15151E;
+    overflow: hidden;
+}
+
+.strip {
+    position:absolute;
+    top: 0em;
+    left: 0em;
+    width: 19.375em;
+    bottom: 0em;
+    transform: skew(-38deg);
+    border-bottom-right-radius: 32em;
+    left: -35em;
+    bottom: -25em;
+}
+
+.strip6 {
+    composes: strip;
+    background: #00292C;
+    width: 43em;
+}
+
+.strip5 {
+    composes: strip;
+    opacity: 0.5;
+    background: #6AD3DB;
+    width: 39em;
+}
+
+.strip4 {
+    composes: strip;
+    background: #6AD3DB;
+    width: 35em;
+}
+
+.strip3 {
+    composes: strip;
+    opacity: 0.4;
+    background: #FFFFFF;
+    width: 31em;
+}
+
+.strip2 {
+    composes: strip;
+    opacity: 0.5;
+    background: #FFFFFF;
+    width: 27em;
+}
+
+.strip1 {
+    composes: strip;
+    opacity: 0.6;
+    background: #FFFFFF;
+    width: 23em;
+}
+
+.navigation {
+    position:absolute;
+    padding: 1em;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+}
+
+.iconFrame {
+    width: 32px;
+}
+
+.headlineBounds {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 735px;
+    margin: auto;
+}
+
+.headline {
+    font-family: AllRoundGothic-Book;
+    font-size: 3em;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
+    align-self: flex-start;
+    margin-block-end: 0.1em;
+    font-weight: 100;
+}
+
+.tagline {
+    font-family: NexaRegular;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    line-height: 1.2em;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.37);
+    font-weight: 100;
+    max-width: 500px;
+}
+
+.actionItemsBounds {
+    display: flex;
+    width: 100%;
+}
+
+.primaryButton {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    font-family: NexaXBold;
+    font-size: 1.2em;
+    color: #0B1617;
+    text-align: center;
+    padding: .8em 2em .8em 2em;
+    text-decoration: none;
+    margin-right: 1.2em;
+}
+
+.secondaryButton {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    font-family: NexaXBold;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: .8em 2em .8em 2em;
+    text-decoration: none;
+}

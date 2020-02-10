@@ -1,0 +1,75 @@
+.navigation {
+    position: relative;
+    height: 3.75em;
+    padding: 0em 1em 0em 1em;
+    background: #15151E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.strip {
+    position:absolute;
+    top: 0em;
+    left: 0em;
+    width: 19.375em;
+    bottom: 0em;
+    transform: skew(-26deg);
+    border-bottom-right-radius: 32em;
+    left: -5.1em;
+    bottom: -7em;
+}
+
+.strip6 {
+    composes: strip;
+    background: #00292C;
+    width: 9.6em;
+}
+
+.strip5 {
+    composes: strip;
+    opacity: 0.5;
+    background: #6AD3DB;
+    width: 9.1em;
+}
+
+.strip4 {
+    composes: strip;
+    background: #6AD3DB;
+    width: 8.6em;
+}
+
+.strip3 {
+    composes: strip;
+    opacity: 0.4;
+    background: #FFFFFF;
+    width: 8.1em;
+}
+
+.strip2 {
+    composes: strip;
+    opacity: 0.5;
+    background: #FFFFFF;
+    width: 7.6em;
+}
+
+.strip1 {
+    composes: strip;
+    opacity: 0.6;
+    background: #FFFFFF;
+    width: 7em;
+}
+
+.iconFrame {
+    width: 32px;
+}
+
+.pageTitle {
+    margin-left: 4.5em;
+    margin-bottom: 0em;
+    font-family: VolteRounded-Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+

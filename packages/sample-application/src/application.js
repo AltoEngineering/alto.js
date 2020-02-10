@@ -1,5 +1,6 @@
 import React from 'react';
-import {Route, Routes, Router} from "@alto.js/router";
+import { render } from "react-dom"
+import {Routes} from "@alto.js/routing";
 import {HomeView} from "./home_view";
 import {BlogsView} from "./blogs_view";
 import {BlogView} from "./blog_view";
@@ -7,36 +8,33 @@ import {UnknownView} from "./unknown_view";
 import {PostsView} from "./posts_view";
 import {PostView} from "./post_view";
 
-window.Router = Router;
+const application = (
+    <Routes>
 
-const Application = () => {
+        <HomeView path={'/index'}/>
 
-    return (
-        <Routes>
+        <HomeView path={'/home'}/>
 
-            <Route path={'/index'} component={HomeView}/>
+        <BlogsView path={'/blogs'}>
 
-            <Route path={'/home'} component={HomeView}/>
+            <BlogView path={'/:id'}>
 
-            <Route path={'/blogs'} component={BlogsView}>
+                <PostsView path={'/posts'}>
 
-                <Route path={'/:id'} component={BlogView}>
+                    <PostView path={'/:post_id'}/>
 
-                    <Route path={'/posts'} component={PostsView}>
+                </PostsView>
 
-                        <Route path={'/:some_id'} component={PostView}/>
+            </BlogView>
 
-                    </Route>
+        </BlogsView>
 
-                </Route>
+        <UnknownView path={'/unknown'}/>
 
-            </Route>
+    </Routes>
+);
 
-            <Route path={'/unknown'} component={UnknownView}/>
 
-        </Routes>
-    )
 
-};
 
-export default Application;
+

@@ -7,6 +7,7 @@
   "scripts": {
     "tsc": "npx lerna run tsc",
     "start": "npx lerna run start",
+    "docs": "cd docs && npm run start",
     "bootstrap": "npx lerna bootstrap --hoist"
   }
 }

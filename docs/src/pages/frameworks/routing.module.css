@@ -1,0 +1,43 @@
+.contentBounds {
+    position: relative;
+    width: 980px;
+    margin: auto;
+}
+
+.frameworkIconBound {
+    position: absolute;
+    top: 2em;
+    height: 85px;
+    width: 85px;
+    background: #D8D8D8;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+
+.textSection {
+    max-width: 680px;
+    width: 100%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+
+.sectionTitle {
+    font-family: VolteRounded-Bold;
+    font-size: 1.5em;
+    color: #0B1617;
+    letter-spacing: 0.5px;
+    max-width: 735px;
+    margin: auto;
+    padding-bottom: 0.5em;
+}
+
+.paragraph {
+    font-family: NexaRegular;
+    font-size: 1em;
+    color: rgba(11,22,23,0.80);
+    line-height: 24px;
+    max-width: 735px;
+    margin: auto;
+    line-height: 1.5em;
+}
